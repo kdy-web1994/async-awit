@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>proxyVue</title>
+    <style>
+       
+    </style>
+  </head>
+  <body>
+        <img src="./img/386112937-5a5763d9ef823_articlex.png" alt=""></br>
+        <img src="./img/1544604075(1).jpg" alt="">
+  </body>
+
+  <script> 
+  function getSomething() {
+    console.log(1)
+    return "something";
+}
+
+async function testAsync() {
+    console.log(2)
+    return Promise.resolve("hello async");
+}
+
+async function test() {
+    
+    const v1 = await getSomething();
+    const v2 = await testAsync();
+    console.log(v1, v2);
+}
+
+test();
+      
+  </script>
+</html>
